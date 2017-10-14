@@ -72,6 +72,8 @@ class SignUp extends Component {
           this.state.confirm_password,
           e => this.setState({ confirm_password: e.target.value }))
         }
+
+        <button>Sign Up</button>
       </div>
     )
   }
