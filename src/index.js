@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './components/common/header';
-import SignUp from './components/auth/signup';
+
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <div>
-    <Header />
-    <SignUp />
-  </div>
+  <App />
 , document.getElementById('root'));
 registerServiceWorker();
