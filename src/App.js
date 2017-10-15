@@ -9,6 +9,8 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <img className="left-rocket" src="left-rocket.png" />
+        <img className="right-rocket" src="right-rocket.png" />
         <SignUp />
       </div>
     );

@@ -1,0 +1,32 @@
+@mixin background-rockets {
+  position: absolute;
+  top: 2%;
+  width: $col-l4;
+}
+
+@mixin form-input {
+    border: none;
+    border-bottom: 2px solid #4B5267;
+    width: $col-l10;
+    background: inherit;
+    height: 50px;
+    margin-bottom: 3%;
+    font-size: $textFont;
+    outline: none;
+}
+
+@mixin register-login-header-buttons {
+  font-size: $headerPText;
+  color: white;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+@mixin login-header-button {
+  background: $primaryColor;
+}
+
+@mixin register-header-button {
+  background: $secondaryColor;
+}
