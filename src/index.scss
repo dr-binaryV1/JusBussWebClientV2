@@ -16,6 +16,8 @@
 
 html {
   background: $backgroundColor;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .logo {

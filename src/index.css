@@ -10,7 +10,9 @@
   font-family: "Saira Extra Condensed"; }
 
 html {
-  background: #2E294E; }
+  background: #2E294E;
+  width: 100vw;
+  overflow-x: hidden; }
 
 .logo {
   width: 25%;
