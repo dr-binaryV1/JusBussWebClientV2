@@ -1,0 +1,123 @@
+@import "variables";
+@import "width";
+@import "mixin";
+@import url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed");
+@font-face {
+  font-family: "Acme", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+  font-family: $primaryFont;
+}
+
+html {
+  background: $backgroundColor;
+}
+
+.logo {
+  width: $col-l3;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.logo img {
+  width: $col-l12;
+}
+
+.left-rocket, .right-rocket {
+  @include background-rockets;
+}
+
+.left-rocket {
+  left: -6%;
+}
+
+.right-rocket {
+  right: -6%;
+}
+
+.register-login-background{
+  background: $primaryColor;
+  height: 76vh;
+  margin: auto;
+  width: $col-l9;
+  position: relative;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.3);
+}
+
+
+.register-login-header {
+  position: absolute;
+  top: 15%;
+}
+
+.header-p-text {
+  font-size: $headerPText;
+  color: $accentColor;
+  text-align: center;
+  width: $col-l12;
+}
+
+.register-login-image {
+  width: $col-l12;
+}
+
+.register-login-form{
+  background: $secondaryColor;
+  float: right;top: 0%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: $col-l6;
+}
+
+.login-header-button {
+  @include login-header-button;
+  @include register-login-header-buttons;
+  width: $col-l6;
+}
+
+.register-header-button {
+  @include register-header-button;
+  @include register-login-header-buttons;
+  width: $col-l6;
+}
+
+.register-header-text {
+  font-size: $headerPText;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.register-inputs {
+  text-align: center;
+  position: absolute;
+  top: 11%;
+}
+
+.register-inputs ::-webkit-input-placeholder {
+  color: white;
+}
+
+.register-login-form input {
+  @include form-input;
+}
+
+.register-login-form input:focus {
+  border-color: $primaryColor;
+}
+
+.register-form-button {
+  height: 50px;
+  width: $col-l4;
+  background: $primaryColor;
+  color: white;
+  border: $primaryColor;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+  font-size: $textFont;
+  margin-top: 2%;
+}
