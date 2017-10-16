@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './components/common/header';
-import SignUp from './components/auth/signup';
+import Auth from './components/auth';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
         <Header />
         <img className="left-rocket" src="left-rocket.png" />
         <img className="right-rocket" src="right-rocket.png" />
-        <SignUp />
+        <Auth />
       </div>
     );
   }
