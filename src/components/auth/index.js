@@ -13,7 +13,7 @@ class Auth extends Component {
       <div className="register-login-background">
         <div className="register-login-header">
           <p className="header-p-text">Your Guide to Everywhere Jamaican</p>
-          <img className="register-login-image" src="shadow-monitor.png" />
+          <img className="register-login-image" src="shadow-monitor.png" alt="monitor" />
         </div>
         <div className="register-login-form">
           <div className="register-login-header-buttons">
