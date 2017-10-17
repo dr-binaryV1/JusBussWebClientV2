@@ -17,8 +17,27 @@ class Auth extends Component {
         </div>
         <div className="register-login-form">
           <div className="register-login-header-buttons">
-            <div onClick={() => this.setState({ currenlyViewing: 'signin' })} className="form-header-button">Sign In</div>
-            <div onClick={() => this.setState({ currenlyViewing: 'signup' })} className="form-header-button active">Sign Up</div>
+            <div
+              onClick={() => {
+                document.getElementById('signin-btn').classList.add('active');
+                document.getElementById('signup-btn').classList.remove('active');
+                this.setState({ currenlyViewing: 'signin' })}
+              }
+              id="signin-btn"
+              className="form-header-button">
+              Sign In
+          </div>
+
+            <div
+              onClick={() => {
+                document.getElementById('signup-btn').classList.add('active');
+                document.getElementById('signin-btn').classList.remove('active');
+                this.setState({ currenlyViewing: 'signup' })}
+              }
+              id="signup-btn"
+              className="form-header-button active">
+              Sign Up
+            </div>
           </div>
 
           {this.state.currenlyViewing === 'signin'

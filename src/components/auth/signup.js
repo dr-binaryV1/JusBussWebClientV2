@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class SignUp extends Component {
   state = {
@@ -74,7 +75,13 @@ class SignUp extends Component {
           e => this.setState({ confirm_password: e.target.value }))
         }
         <br/>
-        <button className="register-form-button">Sign Up</button>
+        <button
+          id="signup-button"
+          onMouseDown={() => $('#signup-button').css('box-shadow', 'none')}
+          onMouseUp={() => $('#signup-button').css('box-shadow', '0 8px 5px rgba(0, 0, 0, 0.2)')}
+          className="register-form-button">
+          Sign Up
+        </button>
       </div>
     )
   }

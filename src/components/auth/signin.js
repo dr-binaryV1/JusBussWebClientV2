@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 class SignIn extends Component {
   state = {
@@ -39,7 +40,13 @@ class SignIn extends Component {
         }
 
         <br/>
-        <button className="register-form-button">Sign In</button>
+        <button
+          id="signin-button"
+          onMouseDown={() => $('#signin-button').css('box-shadow', 'none')}
+          onMouseUp={() => $('#signin-button').css('box-shadow', '0 8px 5px rgba(0, 0, 0, 0.2)')}
+          className="register-form-button">
+          Sign In
+        </button>
       </div>
     )
   }
