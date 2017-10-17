@@ -20,7 +20,8 @@ class SignIn extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-inputs">
+        <p className="form-header-text">Welcome Back!</p>
         {this.renderInput(
           "email",
           "email",

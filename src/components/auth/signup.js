@@ -24,8 +24,8 @@ class SignUp extends Component {
 
   render() {
     return (
-      <div className="register-inputs">
-        <p className="register-header-text">Welcome to the Family!</p>
+      <div className="form-inputs">
+        <p className="form-header-text">Welcome to the Family!</p>
         {this.renderInput(
           "text",
           "username",

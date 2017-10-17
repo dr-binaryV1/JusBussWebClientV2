@@ -43,16 +43,22 @@ html {
 
 .register-login-header {
   position: absolute;
-  top: 15%; }
+  top: 15%;
+  width: 50%;
+  height: 80%; }
 
 .header-p-text {
   font-size: 35px;
   color: #FFFFFF;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 15%; }
 
 .register-login-image {
-  width: 100%; }
+  width: 83.33%;
+  position: absolute;
+  top: 35%;
+  left: 11%; }
 
 .register-login-form {
   background: #EFBCD5;
@@ -63,7 +69,7 @@ html {
   right: 0;
   width: 50%; }
 
-.login-header-button {
+.form-header-button {
   background: #8661C1;
   font-size: 35px;
   color: white;
@@ -72,7 +78,7 @@ html {
   text-align: center;
   width: 50%; }
 
-.register-header-button {
+.form-header-button.active {
   background: #EFBCD5;
   font-size: 35px;
   color: white;
@@ -81,18 +87,16 @@ html {
   text-align: center;
   width: 50%; }
 
-.register-header-text {
+.form-header-text {
   font-size: 35px;
   color: white;
   padding-bottom: 3%; }
 
-.register-inputs {
+.form-inputs {
   text-align: center;
   position: absolute;
-  top: 11%; }
-
-.register-inputs ::-webkit-input-placeholder {
-  color: white; }
+  top: 11%;
+  width: 100%; }
 
 .register-login-form input {
   border: none;
@@ -112,7 +116,11 @@ html {
   width: 33.33%;
   background: #8661C1;
   color: white;
-  border: #8661C1;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #8661C1;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
   font-size: 20px;
-  margin-top: 2%; }
+  margin-top: 2%;
+  cursor: pointer; }
+
+.register-form-button:hover {
+  background: #EFBCD5; }

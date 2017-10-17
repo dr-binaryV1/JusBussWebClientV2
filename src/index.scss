@@ -55,6 +55,8 @@ html {
 .register-login-header {
   position: absolute;
   top: 15%;
+  width: $col-l6;
+  height: 80%;
 }
 
 .header-p-text {
@@ -62,10 +64,14 @@ html {
   color: $accentColor;
   text-align: center;
   width: $col-l12;
+  margin-top: 15%;
 }
 
 .register-login-image {
-  width: $col-l12;
+  width: $col-l10;
+  position: absolute;
+  top: 35%;
+  left: 11%;
 }
 
 .register-login-form{
@@ -77,32 +83,29 @@ html {
   width: $col-l6;
 }
 
-.login-header-button {
+.form-header-button {
   @include login-header-button;
   @include register-login-header-buttons;
   width: $col-l6;
 }
 
-.register-header-button {
+.form-header-button.active {
   @include register-header-button;
   @include register-login-header-buttons;
   width: $col-l6;
 }
 
-.register-header-text {
+.form-header-text {
   font-size: $headerPText;
   color: white;
   padding-bottom: 3%;
 }
 
-.register-inputs {
+.form-inputs {
   text-align: center;
   position: absolute;
   top: 11%;
-}
-
-.register-inputs ::-webkit-input-placeholder {
-  color: white;
+  width: $col-l12;
 }
 
 .register-login-form input {
@@ -118,8 +121,13 @@ html {
   width: $col-l4;
   background: $primaryColor;
   color: white;
-  border: $primaryColor;
-  box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+  border: 2px solid $primaryColor;
+  box-shadow: 0 8px 5px rgba(0,0,0,0.2);
   font-size: $textFont;
   margin-top: 2%;
+  cursor: pointer;
+}
+
+.register-form-button:hover {
+  background: $secondaryColor;
 }
